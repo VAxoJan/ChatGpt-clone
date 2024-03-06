@@ -20,3 +20,20 @@
     height: 901px;
     background-color: #40414E;
 }
+.insideDiv{
+    width: 56.5%;
+    height: 780px;
+    border: 1px solid red;
+    margin: 30px auto;
+}
+.topDiv{
+    width: 100%;
+    height: 480px;
+    border: 1px solid yellow;
+}
+.bottomDiv{
+    width: 100%;
+    height: 250px;
+    margin-top: 35px;
+    border: 1px solid salmon;
+}

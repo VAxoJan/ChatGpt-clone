@@ -1,8 +1,15 @@
+import LeftSideDiv from "./components/LeftSide/LeftSideDiv";
+
 const App = () => {
   return (
     <div className="mainDiv">
-      <div className="left-side"></div>
-      <div className="right-side"></div>
+      <LeftSideDiv/>
+      <div className="right-side">
+        <div className="insideDiv">
+          <div className="topDiv"></div>
+          <div className="bottomDiv"></div>
+        </div>
+      </div>
     </div>
   )
 }
