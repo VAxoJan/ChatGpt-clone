@@ -1,6 +1,9 @@
 const App = () => {
   return (
-    <h1>hello world</h1>
+    <div className="mainDiv">
+      <div className="left-side"></div>
+      <div className="right-side"></div>
+    </div>
   )
 }
 
