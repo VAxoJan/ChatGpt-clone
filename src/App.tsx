@@ -1,8 +1,8 @@
-import MainWork from "./components/input/MainWork";
+import MainWork from "./components/mainWork/MainWork";
 
 const App = () => {
   return (
-   <MainWork/> 
+    <MainWork/>
   )
 }
 
