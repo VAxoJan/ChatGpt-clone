@@ -1,6 +1,12 @@
 import FirstInput from '../Inputs/FirstInput';
 import SecondInput from '../Inputs/SecondInput';
 import LeftSideDiv from '../LeftSide/LeftSideDiv'
+import TopDiv from '../TopDiv/TopDiv';
+
+const test = () => {
+  return console.log(123);
+  
+}
 
 const MainWork = () => {
   return (
@@ -8,7 +14,7 @@ const MainWork = () => {
       <LeftSideDiv/>
       <div className="right-side">
         <div className="insideDiv">
-          <div className="topDiv"></div>
+        <TopDiv onClick={test}/>
           <div className="bottomDiv">
             <FirstInput/>
             <SecondInput/>
