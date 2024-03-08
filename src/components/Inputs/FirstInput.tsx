@@ -8,7 +8,7 @@ const FirstInput: React.FC = () => {
   const handleClick = () => {
     if (value.trim() !== "") {
       setMessages([...messages, value]);
-      setValue(""); // Clear input after sending
+      setValue("");
     }
   };
 
