@@ -5,6 +5,8 @@ const FirstInput: React.FC = () => {
   const [value, setValue] = useState<string>("");
   const [messages, setMessages] = useState<string[]>([]);
 
+
+
   const handleClick = () => {
     if (value.trim() !== "") {
       setMessages([...messages, value]);

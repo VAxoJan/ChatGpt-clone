@@ -1,12 +1,9 @@
 import FirstInput from '../Inputs/FirstInput';
 import SecondInput from '../Inputs/SecondInput';
 import LeftSideDiv from '../LeftSide/LeftSideDiv'
+import { test } from '../Test/Test';
 import TopDiv from '../TopDiv/TopDiv';
-
-const test = () => {
-  return console.log(123);
-  
-}
+import '../Responsive/Responsive.css';
 
 const MainWork = () => {
   return (
@@ -21,7 +18,8 @@ const MainWork = () => {
           </div>
         </div>
       </div>
-    </div>  )
+    </div> 
+)
 }
 
 export default MainWork;

@@ -1,0 +1,11 @@
+@media (max-width: 440px) {
+    .left-side{
+        display: none;
+    }
+    .insideDiv{
+        width: 80.5%;
+        height: 780px;
+        border: 1px solid red;
+        margin: 30px auto;
+    }
+}
