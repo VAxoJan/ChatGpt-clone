@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../images/send.svg";
-import MessageList from "../MessageList/MessageList";
 
 const FirstInput: React.FC = () => {
   const [value, setValue] = useState<string>("");
@@ -37,7 +36,6 @@ const FirstInput: React.FC = () => {
           alt=""
         />
       </div>
-      <MessageList messages={messages} />
     </div>
   );
 };

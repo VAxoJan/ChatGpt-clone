@@ -9,7 +9,7 @@ const MessageList: React.FC<MessageListProps> = ({ messages }) => {
     <div className="message-list">
       {messages.map((message, index) => (
         <div key={index} className="message-item">
-          {message}
+          <h1>{message}</h1>
         </div>
       ))}
     </div>
