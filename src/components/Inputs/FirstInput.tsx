@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import logo from "../../images/send.svg";
-import TopDivFirstValue from "../TopDivValue/TopDivFirstValue";
+import MessageList from "../MessageList/MessageList";
 
 const FirstInput: React.FC = () => {
   const [value, setValue] = useState<string>("");
   const [messages, setMessages] = useState<string[]>([]);
-
-
 
   const handleClick = () => {
     if (value.trim() !== "") {
@@ -20,11 +18,11 @@ const FirstInput: React.FC = () => {
       <h1>User 1</h1>
       <div style={{ display: "flex", position: "relative" }}>
         <input
-        onKeyDown={(e) => {
-          if(e.key === "Enter") {
-            handleClick()
-          }
-        }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleClick();
+            }
+          }}
           value={value}
           onChange={(e) => {
             setValue(e.target.value);
@@ -39,9 +37,7 @@ const FirstInput: React.FC = () => {
           alt=""
         />
       </div>
-        {messages.map((message, index) => (
-          <TopDivFirstValue val={message} key={index} />
-        ))}
+      <MessageList messages={messages} />
     </div>
   );
 };
