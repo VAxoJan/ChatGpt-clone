@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../images/send.svg";
+import TopDivFirstValue from "../TopDivValue/TopDivFirstValue";
 
 const FirstInput: React.FC = () => {
   const [value, setValue] = useState<string>("");
@@ -38,11 +39,9 @@ const FirstInput: React.FC = () => {
           alt=""
         />
       </div>
-      <ul>
         {messages.map((message, index) => (
-          <li key={index}>{message}</li>
+          <TopDivFirstValue val={message} key={index} />
         ))}
-      </ul>
     </div>
   );
 };
