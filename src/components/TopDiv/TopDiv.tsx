@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import MessageList from "../MessageList/MessageList";
 
-const TopDiv = ({ onClick }: { onClick: () => void | undefined }) => {
-  const [messages, setMessages] = useState<string[]>([]);
 
+interface TopDivProps {
+  onClick: () => void | undefined;
+  messages: string[];
+}
+
+const TopDiv: React.FC<TopDivProps> = ({ onClick, messages }) => {
   return (
     <div onClick={onClick} className="topDiv">
-      <div>
-         <MessageList messages={messages} />
-      </div>
+      <MessageList messages={messages} />
     </div>
   );
 };

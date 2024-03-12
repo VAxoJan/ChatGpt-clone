@@ -11,7 +11,7 @@ const MainWork = () => {
       <LeftSideDiv/>
       <div className="right-side">
         <div className="insideDiv">
-        <TopDiv onClick={test}/>
+        <TopDiv onClick={test} messages={[]}/>
           <div className="bottomDiv">
             <FirstInput/>
             <SecondInput/>
