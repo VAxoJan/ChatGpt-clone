@@ -1,18 +1,12 @@
-import React from "react";
-import MessageList from "../MessageList/MessageList";
-
-
-interface TopDivProps {
-  onClick: () => void | undefined;
-  messages: string[];
-}
-
-const TopDiv: React.FC<TopDivProps> = ({ onClick, messages }) => {
+const TopDiv: React.FC<{ messages: string[] }> = ({ messages }) => {
   return (
-    <div onClick={onClick} className="topDiv">
-      <MessageList messages={messages} />
+    <div className="topDiv">
+      <div>
+        {messages.map((message, index) => (
+          <p key={index}>{message}</p> 
+        ))}
+      </div>
     </div>
   );
 };
-
 export default TopDiv;

@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import logo from "../../images/send.svg";
-import MessageList from "../MessageList/MessageList";
 
-const FirstInput: React.FC = () => {
+const FirstInput: React.FC<{ onNewMessage: (message: string) => void }> = ({ onNewMessage }) => {
   const [value, setValue] = useState<string>("");
-  const [messages, setMessages] = useState<string[]>([]);
 
   const handleClick = () => {
     if (value.trim() !== "") {
-      setMessages([...messages, value]);
+      onNewMessage(value);
       setValue("");
     }
   };
