@@ -1,31 +1,31 @@
+import React, { useState } from 'react';
 import FirstInput from '../Inputs/FirstInput';
 import SecondInput from '../Inputs/SecondInput';
-import LeftSideDiv from '../LeftSide/LeftSideDiv'
+import LeftSideDiv from '../LeftSide/LeftSideDiv';
 import TopDiv from '../TopDiv/TopDiv';
 import '../Responsive/Responsive.css';
-import { useState } from 'react';
 
-const MainWork = () => {
+const MainWork: React.FC = () => {
   const [messages, setMessages] = useState<string[]>([]);
 
   const handleNewMessage = (newMessage: string) => {
     setMessages([...messages, newMessage]);
   };
-  return (
 
+  return (
     <div className="mainDiv">
-      <LeftSideDiv/>
+      <LeftSideDiv />
       <div className="right-side">
         <div className="insideDiv">
-        <TopDiv messages={messages} />
+          <TopDiv messages={messages} />
           <div className="bottomDiv">
-          <FirstInput onNewMessage={handleNewMessage} />
-            <SecondInput/>
+            <FirstInput onNewMessage={handleNewMessage} />
+            <SecondInput secNewMessage={handleNewMessage} />
           </div>
         </div>
       </div>
-    </div> 
-)
-}
+    </div>
+  );
+};
 
 export default MainWork;
