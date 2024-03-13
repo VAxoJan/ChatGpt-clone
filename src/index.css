@@ -114,3 +114,7 @@
   justify-content: end;
   gap: 30px;
 }
+.evenMessage{
+  display: flex;
+  gap: 30px;
+}
